@@ -6,4 +6,11 @@
 //  Copyright (c) 2013 no320.com. All rights reserved.
 //
 
-CGFloat Benchmarking (void (^block)(void));
+
+CGFloat benchmarking (void (^block)(void));
+
+CGFloat benchmarking_with_message (void (^block)(void),NSString *pmessage) ;
+
+CGFloat benchmarking_with_message_and_execute_times (void (^block)(void),NSString *pmessage,int pexecute_times) ;
+
+CGFloat benchmarking_with_message_and_execute_times_show_detail (void (^block)(void),NSString *pmessage,int pexecute_times) ;
