@@ -29,37 +29,39 @@ A test case defines the fixture to run multiple tests. To define a test case:
  
  
  Test methods with no parameters, returning no value, and prefixed with 'test', such as:
- !{
- - (void) testSomething;
- }
+
+ 	- (void) testSomething;
+
  
  are automatically recognized as test cases by the SenTestingKit framework. Each SenTestCase subclass' defaultTestSuite is a SenTestSuite which includes theses tests.
  
  Test methods implementations usually contains assertions that must be verified for the test to pass: the STAssertTrue() macro defined below. Here is an example:
  
- !{
- @interface MathTest : SenTestCase
- {
- float f1;
- float f2;
- }
- - (void) testAddition;
- @end
+
+	 
+	 @interface MathTest : SenTestCase
+	 {
+	 float f1;
+	 float f2;
+	 }
+	 - (void) testAddition;
+	 @end
  
  
- @implementation MathTest
- - (void) setUp
- {
- f1 = 2.0;
- f2 = 3.0;
- }
+	 @implementation MathTest
+	 - (void) setUp
+	 {
+	 f1 = 2.0;
+	 f2 = 3.0;
+	 }
  
- - (void) testAddition
- {
- STAssertTrue (f1 + f2 == 5.0, @"%f + %f should equal 5.0", f1, f2);
- }
- @end
- }
+	 - (void) testAddition
+	 {
+	 STAssertTrue (f1 + f2 == 5.0, @"%f + %f should equal 5.0", f1, f2);
+	 }
+	 @end
+	 
+ 
  
 ## History
 
