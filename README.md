@@ -9,6 +9,7 @@
 	//  Copyright (c) 2013 no320.com. All rights reserved.
 	//
 
+it depends on CoreGraphics.framework
 ## usage：
 
 	git submodule add  https://github.com/i5ting/IOS-TEST-UNIT.git gwcl/vendor/ios-test-unit
