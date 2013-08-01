@@ -7,15 +7,17 @@
 //
 
 #import <mach/mach_time.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKit.h>
 
 CGFloat benchmarking (void (^block)(void))
 {
-    benchmarking_with_message(block, @"default message");
+    return benchmarking_with_message(block, @"default message");
 }
-
-CGFloat benchmarking_with_message (void (^block)(void),NSString *pmessage){
-    benchmarking_with_message_and_execute_times(block, pmessage, 1);
-}
+//
+//CGFloat benchmarking_with_message (void (^block)(void),NSString *pmessage){
+//    benchmarking_with_message_and_execute_times(block, pmessage, 1);
+//}
 
 //CGFloat Benchmarking_with_message_and_execute_times (void (^block)(void),NSString *pmessage,int pexecute_times) ;
 /**
