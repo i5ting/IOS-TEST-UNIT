@@ -66,6 +66,7 @@ A test case defines the fixture to run multiple tests. To define a test case:
  
 ## History
 
+v1.0.1 增加ghunit的宏，目前未测试
 v1.0
 
 ## Contributors
