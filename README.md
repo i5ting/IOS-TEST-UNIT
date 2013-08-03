@@ -63,6 +63,7 @@ A test case defines the fixture to run multiple tests. To define a test case:
 	 @end
 	 
  
+其他参见[wiki](https://github.com/i5ting/IOS-TEST-UNIT/wiki)
  
 ## History
 
